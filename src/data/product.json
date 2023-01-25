@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "name": "bottle1",
+      "imgUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaFJn2kXD9_tM9sDubs67zWPkXE224gZmUA&usqp=CAU",
+      "price": "10"
+    },
+    {
+      "id": 2,
+      "name": "bottle2",
+      "imgUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaFJn2kXD9_tM9sDubs67zWPkXE224gZmUA&usqp=CAU",
+      "price": "20"
+    },
+    {
+      "id": 3,
+      "name": "bottle3",
+      "imgUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaFJn2kXD9_tM9sDubs67zWPkXE224gZmUA&usqp=CAU",
+      "price": "30"
+    },
+    {
+      "id": 4,
+      "name": "bottle4",
+      "imgUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaFJn2kXD9_tM9sDubs67zWPkXE224gZmUA&usqp=CAU",
+      "price": "40"
+    }
+  ]
