@@ -1,16 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
-const Navbar = () => {
-  return (
-    <div className="Nav">
-      <Link to="/" className="link">
-        Home
-      </Link>
-      <Link to="/cart" className="link">
-        Cart
-      </Link>
-    </div>
-  );
-};
+import React, {useContext} from 'react'
+import { Link } from 'react-router-dom'
+import { CartContext } from '../context/CartContext';
 
-export default Navbar;
+const Navbar = () => {
+  const { cartItems } = useContext(CartContext);
+  return (
+    <>
+    <div className='Nav'>
+       <Link to='/' className='link'>Home</Link>
+       <Link to='/cart' className='link' >Cart<sup className='sup'>{cartItems.length}</sup></Link>
+    </div> 
+    </>
+  )
+}
+
+export default Navbar
