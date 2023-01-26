@@ -9,7 +9,7 @@ const Cart = ({}) => {
         cartItems.map((item) => {
           return (
             <div key={item.id} className="Cart-items">
-              <h1>{item.name}</h1>
+              <h1 className="cart-title">{item.name}</h1>
               <p className="price">{item.price}</p>
               <div className="quantity">
                 <button className="minus" onClick={() => decreaseFromCart(item.id)}>-</button>

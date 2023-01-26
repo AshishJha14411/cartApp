@@ -1,5 +1,4 @@
-import { createContext, useState, useEffect } from "react";
-import productList from "../data/product.json";
+import { createContext, useState } from "react";
 
 export const CartContext = createContext();
 
@@ -8,7 +7,8 @@ export function CartContextProvider({ children }) {
   const getQuantity =
     cartItems.reduce((quantity, item) => item.quantity + quantity, 0)?.quantity ||
     0;
-  const addToCart = (product) => {
+  /* Add to Cart functionality */
+    const addToCart = (product) => {
       setcartItems((curritems) => {
             if(curritems.find(item => item.id ===product.id)==null){
                 return [...curritems, {...product,quantity:1}]
@@ -24,6 +24,7 @@ export function CartContextProvider({ children }) {
         })
        
   };
+  /* Decrese from cart */
   const decreaseFromCart = (id) => {
     setcartItems((curritems) => {
       if (curritems.find((item) => item.id === id)?.quantity == 1) {
@@ -39,7 +40,7 @@ export function CartContextProvider({ children }) {
       }
     });
   };
-
+/* Remove from cart */
   const removeFromCart = (id) => {
     setcartItems((curritems) => {
       return curritems.filter((item) => item.id !== id);

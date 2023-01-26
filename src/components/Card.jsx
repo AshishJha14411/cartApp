@@ -8,7 +8,7 @@ const {addToCart} = useContext(CartContext)
     <div className="Card">
     {productList && productList.map((item) => {
       return (
-        <div key={item.id}>
+        <div key={item.id} className="Card-items">
           <img src={item.imgUrl} alt="product-img" />
           <p className='title'>{item.name}</p>
           <p className='pricetag'>Price: {item.price}</p>
