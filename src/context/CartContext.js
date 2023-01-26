@@ -10,7 +10,7 @@ export function CartContextProvider({ children }) {
   /* Add to Cart functionality */
     const addToCart = (product) => {
       setcartItems((curritems) => {
-            if(curritems.find(item => item.id ===product.id)==null){
+            if(curritems.find(item => item.id === product.id)===null){
                 return [...curritems, {...product,quantity:1}]
             }else {
                 return curritems.map(item => {
