@@ -21,4 +21,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 # Deployed Version
 
-[Live Link](https://cartapptrial-akj.netlify.app/cart)
+[Live Link](https://cartapptrial-akj.netlify.app)
