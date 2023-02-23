@@ -1,5 +1,5 @@
 # Description
-This is a react project made to search for a movie with the movie name, it is case insensitive. The project uses the API of OMDB to fetch the results. The project was build with an aim to understand Api handling of different types.
+A Basic Cart App with a Products page and Cart Page. It was made using React-Router, React Context API. The Data used in this App is static.   
 
 ## SnapShot of Project
 
